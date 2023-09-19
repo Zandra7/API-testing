@@ -20,3 +20,9 @@ button:hover {
 p {
     text-align: center;
 }
+
+img {
+    width: 4rem;
+    display: block;
+    margin: 4rem auto 0;
+}
