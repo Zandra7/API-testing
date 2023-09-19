@@ -2,7 +2,7 @@ let out = ""
 let ut = document.getElementById("out")
 let randJoke
 
-function click(){
+function getJoke(){
  fetch("https://v2.jokeapi.dev/joke/Any")
 	.then(respons => {
 		return respons.json()
