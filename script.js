@@ -3,17 +3,16 @@ let ut = document.getElementById("out")
 let checkmark
 
 function klikk(){
- fetch("https://jsonplaceholder.typicode.com/todos/10")
+ fetch("https://v2.jokeapi.dev/joke/Any")
 	 .then(respons => {
-		 out += respons.status
 		 return respons.json()
 	 })
 	 .then(data => {
-		 checkmark = data.completed ? "☑":"☐"
-		 out += "<br>"+checkmark+" "+data.title
+		 checkmark = data.joke
+		 out += checkmark
+         ut.innerHTML = out
 	 })
 	
- ut.innerHTML = out
  out = ""
 }
 
