@@ -10,6 +10,7 @@ button {
     display: block;
     padding: 1rem 2.5rem;
     margin: 0 auto;
+    width: 11rem;
 }
 
 button:hover {
@@ -25,4 +26,12 @@ img {
     width: 4rem;
     display: block;
     margin: 4rem auto 0;
+}
+
+#search {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 9rem;
+    border: 0.1rem solid black;
 }
